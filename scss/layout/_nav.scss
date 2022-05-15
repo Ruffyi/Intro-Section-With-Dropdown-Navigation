@@ -1,0 +1,8 @@
+.nav {
+	flex-grow: 1;
+	&__list {
+		@include flex-mother(row, center, flex-start);
+		padding-left: 10rem;
+		list-style-type: none;
+	}
+}

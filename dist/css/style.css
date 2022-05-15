@@ -26,7 +26,36 @@ html {
 .wrapper {
   max-width: 114rem;
   margin: 0 auto;
-  background-color: green;
+}
+
+.nav {
+  flex-grow: 1;
+}
+.nav__list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 10rem;
+  list-style-type: none;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 7rem;
+}
+.header__logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.dropdown {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */

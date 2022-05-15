@@ -1,0 +1,7 @@
+.header {
+	@include flex-mother(row, center, space-between);
+	height: 7rem;
+	&__logo {
+		@include flex-mother();
+	}
+}
