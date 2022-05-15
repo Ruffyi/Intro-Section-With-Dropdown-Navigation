@@ -1,5 +1,22 @@
-body {
-  background-color: purple;
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+:root {
+  --clr-primary-almost-white: hsl(0deg, 0%, 98%);
+  --clr-primary-medium-gray: hsl(0deg, 0%, 41%);
+  --clr-primary-almost-black: hsl(0deg, 0%, 8%);
+}
+
+html {
+  box-sizing: border-box;
+  font-family: "Epilogue", sans-serif;
+  font-size: 62.5%;
+  font-weight: 400;
 }
 
 /*# sourceMappingURL=style.css.map */
