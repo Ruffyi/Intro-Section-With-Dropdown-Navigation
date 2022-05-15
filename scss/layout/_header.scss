@@ -4,4 +4,12 @@
 	&__logo {
 		@include flex-mother();
 	}
+	&__links {
+		@include flex-mother();
+		.link {
+			margin: 0 2rem;
+			font-size: 1.5rem;
+			color: var(--clr-primary-almost-black);
+		}
+	}
 }

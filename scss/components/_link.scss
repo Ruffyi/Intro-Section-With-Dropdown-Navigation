@@ -1,0 +1,19 @@
+.link {
+	&:visited,
+	&:link {
+		display: block;
+		text-decoration: none;
+		transition: transform 0.3s;
+	}
+	&:hover {
+		transform: translateY(-3px);
+	}
+	&:active {
+		transform: translateY(-1px);
+	}
+	&--register {
+		padding: 1rem 2rem;
+		border: 3px solid var(--clr-primary-almost-black);
+		border-radius: 1.5rem;
+	}
+}

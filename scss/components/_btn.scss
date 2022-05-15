@@ -1,0 +1,11 @@
+.btn {
+	@include flex-mother(row, center, space-between);
+	border: none;
+	background-color: transparent;
+	font-family: inherit;
+	cursor: pointer;
+	img {
+		pointer-events: none;
+		padding-left: 0.5rem;
+	}
+}

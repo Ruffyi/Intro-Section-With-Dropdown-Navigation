@@ -3,6 +3,28 @@
 	&__list {
 		@include flex-mother(row, center, flex-start);
 		padding-left: 10rem;
+		width: fit-content;
 		list-style-type: none;
+	}
+	&__item {
+		&:not(:last-child) {
+			margin-right: 4rem;
+		}
+	}
+	&__link {
+		color: var(--clr-primary-medium-gray);
+		font-size: 1.5rem;
+		transition: all 0.3s;
+		&:hover {
+			color: var(--clr-primary-almost-black);
+		}
+	}
+	&__button {
+		color: var(--clr-primary-medium-gray);
+		font-size: 1.5rem;
+		transition: all 0.3s;
+		&:hover {
+			color: var(--clr-primary-almost-black);
+		}
 	}
 }
