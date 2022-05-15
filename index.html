@@ -29,14 +29,19 @@
 					<nav class="nav">
 						<ul class="nav__list">
 							<li class="nav__item">
-								<button class="btn nav__button">
+								<button
+									class="btn nav__button"
+									aria-expanded="false"
+									aria-controls="dropdown-0"
+									data-drop
+								>
 									Features
 									<img
 										src="./assets/images/icon-arrow-down.svg"
 										alt="Arrow down"
 									/>
 								</button>
-								<ul class="dropdown">
+								<ul class="dropdown" id="dropdown-0">
 									<li class="dropdown__item">
 										<a href="#" class="dropdown__link"
 											><img
@@ -76,14 +81,19 @@
 								</ul>
 							</li>
 							<li class="nav__item">
-								<button class="btn nav__button">
+								<button
+									class="btn nav__button"
+									aria-expanded="false"
+									aria-controls="dropdown-1"
+									data-drop
+								>
 									Company
 									<img
 										src="./assets/images/icon-arrow-down.svg"
 										alt="Arrow down"
 									/>
 								</button>
-								<ul class="dropdown">
+								<ul class="dropdown" id="dropdown-1">
 									<li class="dropdown__item">
 										<a href="#" class="dropdown__link">History</a>
 									</li>
@@ -110,6 +120,6 @@
 				</header>
 			</div>
 		</main>
-		<script src="./script/app.js"></script>
+		<script src="./script/app.js" defer></script>
 	</body>
 </html>

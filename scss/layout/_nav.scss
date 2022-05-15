@@ -7,6 +7,7 @@
 		list-style-type: none;
 	}
 	&__item {
+		position: relative;
 		&:not(:last-child) {
 			margin-right: 4rem;
 		}
