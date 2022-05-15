@@ -1,0 +1,9 @@
+.companies {
+	@include flex-mother(row, center, space-between);
+	margin-top: 4rem;
+	&__company img {
+		@include mediaQuery(map-get($breakpoints-map, '800')) {
+			width: 90%;
+		}
+	}
+}

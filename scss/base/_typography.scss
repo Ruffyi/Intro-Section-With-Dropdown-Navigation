@@ -1,0 +1,31 @@
+.heading__primary {
+	font-size: 6rem;
+	letter-spacing: 1px;
+	&--bottom {
+		display: block;
+		@include mediaQuery(map-get($breakpoints-map, '800')) {
+			display: inline;
+		}
+	}
+	@include mediaQuery(map-get($breakpoints-map, '925')) {
+		font-size: 4rem;
+	}
+	@include mediaQuery(map-get($breakpoints-map, '800')) {
+		text-align: center;
+	}
+}
+
+.heading__secondary {
+	font-size: 2rem;
+	color: var(--clr-primary-medium-gray);
+	font-weight: 500;
+	line-height: 1.5;
+	margin: 4rem 0;
+	@include mediaQuery(map-get($breakpoints-map, '925')) {
+		font-size: 1.5rem;
+		margin: 3rem 0;
+	}
+	@include mediaQuery(map-get($breakpoints-map, '800')) {
+		text-align: center;
+	}
+}

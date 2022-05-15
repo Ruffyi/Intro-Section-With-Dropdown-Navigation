@@ -9,14 +9,24 @@
 	};
 
 	const managingFocus = target => {
-		console.log(target);
 		const allInteractiveElements = target.querySelectorAll('.dropdown__link');
+		let activeInteractiveElementID = 0;
 		const lastInteractiveElementID = allInteractiveElements.length - 1;
-		const lastInteractiveElement =
-			allInteractiveElements[lastInteractiveElementID];
 
-		lastInteractiveElement.addEventListener('blur', () => {
-			target.classList.remove('u-active');
+		allInteractiveElements[activeInteractiveElementID].focus();
+
+		target.addEventListener('keydown', ({ keyCode }) => {
+			if (
+				keyCode === 40 &&
+				activeInteractiveElementID < lastInteractiveElementID
+			) {
+				activeInteractiveElementID++;
+				allInteractiveElements[activeInteractiveElementID].focus();
+			}
+			if (keyCode === 38 && activeInteractiveElementID !== 0) {
+				activeInteractiveElementID--;
+				allInteractiveElements[activeInteractiveElementID].focus();
+			}
 		});
 	};
 

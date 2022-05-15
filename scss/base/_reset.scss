@@ -18,3 +18,7 @@ html {
 	font-size: map-get($fs-map, 'primary');
 	font-weight: 400;
 }
+
+img {
+	object-fit: cover;
+}

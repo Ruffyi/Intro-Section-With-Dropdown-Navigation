@@ -1,7 +1,7 @@
 .link {
 	&:visited,
 	&:link {
-		display: block;
+		display: inline-block;
 		text-decoration: none;
 		transition: transform 0.3s;
 	}
@@ -15,5 +15,13 @@
 		padding: 1rem 2rem;
 		border: 3px solid var(--clr-primary-almost-black);
 		border-radius: 1.5rem;
+	}
+	&--learn {
+		padding: 1.5rem 3rem;
+		background-color: var(--clr-primary-almost-black);
+		color: var(--clr-primary-almost-white);
+		border-radius: 1rem;
+		font-weight: 700;
+		font-size: 1.5rem;
 	}
 }

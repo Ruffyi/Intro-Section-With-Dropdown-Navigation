@@ -1,0 +1,34 @@
+.content {
+	@include flex-mother(row, center, center);
+	padding: 0 6rem;
+	height: calc(100% - 15rem);
+	@include mediaQuery(map-get($breakpoints-map, '800')) {
+		flex-direction: column;
+		padding: 0 4rem;
+	}
+	@include mediaQuery(map-get($breakpoints-map, '576')) {
+		padding: 0;
+	}
+	&__heading {
+		@include flex-mother(column, flex-start);
+		@include mediaQuery(map-get($breakpoints-map, '800')) {
+			align-items: center;
+			padding-right: 0;
+			margin-top: 2rem;
+		}
+		padding-right: 4rem;
+		height: 100%;
+	}
+	&__image {
+		@include flex-mother();
+		@include mediaQuery(map-get($breakpoints-map, '800')) {
+			order: -1;
+			background-image: url('./../../assets/images/image-hero-mobile.png');
+		}
+		background-image: url('./../../assets/images/image-hero-desktop.png');
+		background-size: cover;
+		background-position: center;
+		height: 100%;
+		width: 100%;
+	}
+}
