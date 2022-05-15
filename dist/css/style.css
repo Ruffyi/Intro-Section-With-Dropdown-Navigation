@@ -19,4 +19,14 @@ html {
   font-weight: 400;
 }
 
+.main {
+  min-height: 100vh;
+}
+
+.wrapper {
+  max-width: 114rem;
+  margin: 0 auto;
+  background-color: green;
+}
+
 /*# sourceMappingURL=style.css.map */
