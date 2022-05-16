@@ -68,5 +68,15 @@
 		showDropdown(target);
 	});
 
+	const closeMenu = () => {
+		if (window.innerWidth > 800) {
+			navElement.classList.remove('nav__mobile');
+			headerLinksElement.classList.remove('u-flex');
+			headerLinksElement.classList.remove('u-mobile-links');
+		}
+	};
+
 	hamburgerButton.addEventListener('click', showMenu);
+
+	window.addEventListener('resize', closeMenu);
 })();
