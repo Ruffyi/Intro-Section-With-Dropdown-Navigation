@@ -19,9 +19,15 @@
 	&--learn {
 		padding: 1.5rem 3rem;
 		background-color: var(--clr-primary-almost-black);
+		border: 3px solid var(--clr-primary-almost-black);
 		color: var(--clr-primary-almost-white);
 		border-radius: 1rem;
 		font-weight: 700;
 		font-size: 1.5rem;
+		transition: all 0.3s;
+		&:hover {
+			color: var(--clr-primary-almost-black);
+			background-color: var(--clr-primary-almost-white);
+		}
 	}
 }

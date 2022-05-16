@@ -1,5 +1,8 @@
 .nav {
 	flex-grow: 1;
+	@include mediaQuery(map-get($breakpoints-map, '800')) {
+		display: none;
+	}
 	&__list {
 		@include flex-mother(row, center, flex-start);
 		padding-left: 10rem;
@@ -26,6 +29,36 @@
 		transition: all 0.3s;
 		&:hover {
 			color: var(--clr-primary-almost-black);
+		}
+	}
+	&__mobile {
+		display: block;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		left: 40%;
+		background-color: var(--clr-primary-almost-white);
+		box-shadow: 0 1rem 1rem 0 var(--clr-box-shadow);
+		.nav__list {
+			@include flex-mother(column);
+			height: 100%;
+			width: 100%;
+			padding: 0;
+		}
+		.nav__item {
+			margin: 2rem 0;
+		}
+		.btn {
+			width: 100%;
+		}
+		.dropdown {
+			position: relative;
+			box-shadow: none;
+			width: 100%;
+		}
+		#dropdown-0 {
+			left: 0;
 		}
 	}
 }

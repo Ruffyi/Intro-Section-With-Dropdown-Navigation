@@ -1,6 +1,9 @@
 .header {
 	@include flex-mother(row, center, space-between);
 	height: 7rem;
+	@include mediaQuery(map-get($breakpoints-map, '800')) {
+		padding: 0 2rem;
+	}
 	&__logo {
 		@include flex-mother();
 	}
@@ -10,6 +13,9 @@
 			margin: 0 2rem;
 			font-size: 1.5rem;
 			color: var(--clr-primary-almost-black);
+		}
+		@include mediaQuery(map-get($breakpoints-map, '800')) {
+			display: none;
 		}
 	}
 }

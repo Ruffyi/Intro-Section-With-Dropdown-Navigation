@@ -4,7 +4,14 @@
 	background-color: transparent;
 	font-family: inherit;
 	cursor: pointer;
-	img {
+	&--hamburger {
+		display: none;
+		@include mediaQuery(map-get($breakpoints-map, '800')) {
+			@include flex-mother();
+			z-index: 10;
+		}
+	}
+	.img {
 		pointer-events: none;
 		padding-left: 0.5rem;
 	}
